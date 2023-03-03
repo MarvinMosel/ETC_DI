@@ -1,7 +1,3 @@
-/****** Script for calc. trends in time series - used for drought  ******/
---- info used: ---https://medium.com/analytics-vidhya/advanced-sql-time-series-analysis-fd40eaa08fa3
-
-
 USE [ETC_ULS_Sandbox]
 go
 
@@ -32,6 +28,10 @@ SELECT CAST([year] as int) as [year]
   where [Admin] =615
 
   go
+
+  drop table if exists  [ETC_ULS_Sandbox].[cubes].[C_DroughtImpact2022_assessment_version_v3_pivot_test_615_2]
+  go
+
 
   SELECT  
   [year]
